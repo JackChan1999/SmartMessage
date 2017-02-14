@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_btn_bg"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                >
+
+
+    <ImageView
+        android:id="@+id/iv_conversation_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/img_default_avatar"
+        />
+
+    <TextView
+        android:id="@+id/tv_conversation_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:text="年月日"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_conversation_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/tv_conversation_date"
+        android:layout_toRightOf="@id/iv_conversation_avatar"
+        android:singleLine="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="号码138438"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_conversation_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_conversation_address"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/tv_conversation_address"
+        android:layout_alignRight="@+id/tv_conversation_address"
+        android:maxLines="2"
+        android:text="阿卡还得靠就爱上疯狂绝代双骄法律客户端是否快速的凤凰山"
+        android:textSize="15sp"
+        />
+
+    <com.google.smartmessage.ui.widget.SmoothCheckBox
+        android:id="@+id/iv_check"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:color_checked="#149A45"
+        />
+
+</RelativeLayout>
